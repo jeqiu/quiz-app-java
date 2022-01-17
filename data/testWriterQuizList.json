@@ -1,0 +1,35 @@
+{
+    "name": "My quiz list",
+    "quizzes": [
+        {
+            "creator": "William",
+            "questions": [
+                {
+                    "question": "Is Yorick is a character from the play Macbeth?",
+                    "answer": "N"
+                },
+                {
+                    "question": "Hamlet is a comedy with a happy ending.",
+                    "answer": "N"
+                }
+            ],
+            "id": 1,
+            "title": "Shakespeare's Plays"
+        },
+        {
+            "creator": "Tom & Jerry",
+            "questions": [
+                {
+                    "question": "Canada has 11 provinces and territories.",
+                    "answer": "N"
+                },
+                {
+                    "question": "UBC is Canada's oldest university.",
+                    "answer": "N"
+                }
+            ],
+            "id": 2,
+            "title": "Canadian Trivia"
+        }
+    ]
+}

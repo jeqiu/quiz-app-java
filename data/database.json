@@ -1,0 +1,66 @@
+{
+  "name": "QuizApp",
+  "quizzes": [
+    {
+      "creator": "William",
+      "questions": [
+        {
+          "question": "Is Yorick is a character from the play Macbeth?",
+          "answer": "N"
+        },
+        {
+          "question": "Hamlet is a comedy with a happy ending.",
+          "answer": "N"
+        },
+        {
+          "question": "The Capulets and the Montagues are feuding families from Romeo and Juliet.",
+          "answer": "Y"
+        }
+      ],
+      "id": 1,
+      "title": "Shakespeare's Plays"
+    },
+    {
+      "creator": "Ash",
+      "questions": [
+        {
+          "question": "Canada has 11 provinces and territories.",
+          "answer": "N"
+        },
+        {
+          "question": "UBC is Canada's oldest university.",
+          "answer": "N"
+        },
+        {
+          "question": "Does Canada have more lakes than any other country in the world?",
+          "answer": "Y"
+        },
+        {
+          "question": "Is Victoria the capital of British Columbia?",
+          "answer": "Y"
+        }
+      ],
+      "id": 2,
+      "title": "Canadian Trivia"
+    },
+    {
+      "creator": "me",
+      "questions": [
+        {
+          "question": "SQL stands for structured query language.",
+          "answer": "Y"
+        },
+        {
+          "question": "A foreign key refers to a primary key in another table.",
+          "answer": "Y"
+        },
+        {
+          "question": "SQL is used for querying data in relational databases.",
+          "answer": "Y"
+        }
+      ],
+      "id": 3,
+      "title": "SQL"
+    }
+  ]
+}

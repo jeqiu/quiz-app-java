@@ -1,0 +1,26 @@
+{
+    "name": "QuizApp",
+    "quizzes": [{
+        "creator": "Sean",
+        "questions": [
+            {
+                "question": "Is there a city that is also a country?",
+                "answer": "Y"
+            },
+            {
+                "question": "Is Africa the largest of the seven continents?",
+                "answer": "N"
+            },
+            {
+                "question": "Is America a continent?",
+                "answer": "N"
+            },
+            {
+                "question": "Is the Amazon the longest river in the world?",
+                "answer": "N"
+            }
+        ],
+        "id": 4,
+        "title": "Geography"
+    }]
+}
