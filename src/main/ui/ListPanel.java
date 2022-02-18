@@ -75,63 +75,29 @@ public class ListPanel extends JPanel implements ListSelectionListener {
         }
     }
 
-    // EFFECTS: helper function for creating add, delete, select, load and save buttons for quizzes
+    // EFFECTS: creates select, add, delete, load and save buttons
     private void createButtons() {
-        createSelectButton("Select Quiz");
-        createAddButton("Create New Quiz");
-        createDeleteButton("Delete Quiz");
-        createLoadButton("Load");
-        createSaveButton("Save");
+        selectButton = new JButton("Select Quiz");
+        activateButton(selectButton, new SelectListener());
+
+        addButton = new JButton("Create New Quiz");
+        activateButton(addButton, new AddListener());
+
+        deleteButton = new JButton("Delete Quiz");
+        activateButton(deleteButton, new DeleteListener());
+
+        loadButton = new JButton("Load");
+        activateButton(loadButton, new LoadListener());
+
+        saveButton = new JButton("Save");
+        activateButton(saveButton, new SaveListener());
     }
 
-    // REQUIRES: non-zero length for button label
-    // MODIFIES: this
-    // EFFECTS: creates button for selecting a quiz and adds action listener to button
-    private void createSelectButton(String label) {
-        selectButton = new JButton(label);
-        SelectListener selectListener = new SelectListener();
-        selectButton.addActionListener(selectListener);
-        selectButton.setEnabled(true);
-    }
-
-    // REQUIRES: non-zero length for button label
-    // MODIFIES: this
-    // EFFECTS: creates button for adding a new quiz and adds action listener to button
-    private void createAddButton(String label) {
-        addButton = new JButton(label);
-        AddListener addListener = new AddListener();
-        addButton.addActionListener(addListener);
-        addButton.setEnabled(true);
-    }
-
-    // REQUIRES: non-zero length for button label
-    // MODIFIES: this
-    // EFFECTS: creates button for deleting a quiz and adds action listener to button
-    private void createDeleteButton(String label) {
-        deleteButton = new JButton(label);
-        DeleteListener deleteListener = new DeleteListener();
-        deleteButton.addActionListener(deleteListener);
-        deleteButton.setEnabled(true);
-    }
-
-    // REQUIRES: non-zero length for button label
-    // MODIFIES: this
-    // EFFECTS: creates button for loading quizzes and adds action listener to button
-    private void createLoadButton(String label) {
-        loadButton = new JButton(label);
-        LoadListener loadListener = new LoadListener();
-        loadButton.addActionListener(loadListener);
-        loadButton.setEnabled(true);
-    }
-
-    // REQUIRES: non-zero length for button label
-    // MODIFIES: this
-    // EFFECTS: creates button for saving quizzes and adds action listener to button
-    private void createSaveButton(String label) {
-        saveButton = new JButton(label);
-        SaveListener saveListener = new SaveListener();
-        saveButton.addActionListener(saveListener);
-        saveButton.setEnabled(true);
+    // MODIFIES: button
+    // EFFECTS: helper function that adds action listener to button
+    private void activateButton(JButton button, ActionListener actionListener) {
+        button.addActionListener(actionListener);
+        button.setEnabled(true);
     }
 
     // MODIFIES: this
